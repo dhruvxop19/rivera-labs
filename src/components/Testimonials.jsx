@@ -12,10 +12,34 @@ const Testimonials = () => {
             color: "#acc8b4"
         },
         {
+            name: "Aarav Patel",
+            role: "CTO, FinEdge",
+            text: "The lightning fast delivery was no joke. We went from concept to launch in record time without compromising quality.",
+            color: "#f4a261"
+        },
+        {
             name: "David Chen",
             role: "Founder, ArtSpace",
             text: "Reliable, creative, and technically sound. The team understood our vision from day one and executed it flawlessly.",
             color: "#f4a261"
+        },
+        {
+            name: "Vikram Malhotra",
+            role: "Owner, IronCore Gym",
+            text: "Our membership sign-ups doubled after the new site launch. The energy they captured in the design is unmatched.",
+            color: "#8cabff"
+        },
+        {
+            name: "Priya Sharma",
+            role: "Founder, Bloom AI",
+            text: "Rivera Labs perfectly captured our brand's essence. The collage aesthetic stood out in a crowded market.",
+            color: "#e2c08d"
+        },
+        {
+            name: "Rohan Gupta",
+            role: "Director, Urban Threads",
+            text: "They built a sleek, high-converting e-commerce store for our clothing line. The user experience is buttery smooth.",
+            color: "#acc8b4"
         },
         {
             name: "Elena Rodriguez",
@@ -24,10 +48,22 @@ const Testimonials = () => {
             color: "#e2c08d"
         },
         {
+            name: "Ananya Desai",
+            role: "Founder, Visionary Optics",
+            text: "A visually stunning showcase for our eyewear collection. The team paid attention to every micro-interaction.",
+            color: "#f4a261"
+        },
+        {
             name: "Marcus Cole",
             role: "Director, Horizon",
             text: "Incredible attention to detail. The animations and interactions feel so premium.",
             color: "#8cabff"
+        },
+        {
+            name: "Suresh Reddy",
+            role: "CEO, Skyline Estates",
+            text: "Professional, timely, and innovative. They created a virtual tour experience that helped us sell premium properties faster.",
+            color: "#e2c08d"
         }
     ];
 
