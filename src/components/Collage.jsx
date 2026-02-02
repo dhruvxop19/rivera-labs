@@ -23,8 +23,11 @@ const Collage = () => {
                 transition={{ duration: 0.8 }}
                 style={{
                     backgroundImage: `url(${heroCollageImg})`,
-                    backgroundSize: 'cover',
+                    backgroundSize: 'contain',
+                    backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
+                    width: '100%',
+                    height: '100%',
                     overflow: 'hidden'
                 }}
             >
@@ -61,7 +64,7 @@ const Collage = () => {
                     border: '1px solid black',
                     transform: 'rotate(15deg)',
                     zIndex: 0
-                    
+
                 }}
                 initial={{ rotate: 0, scale: 0 }}
                 animate={{ rotate: 15, scale: 1 }}

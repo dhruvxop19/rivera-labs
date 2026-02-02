@@ -277,3 +277,143 @@ ul {
   position: absolute;
   opacity: 0.8;
 }
+
+/* Hero Section Styles moved from inline */
+.hero {
+  padding: 80px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+
+.sub-text {
+  max-width: 300px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* Services Section Styles moved from inline */
+.services-section {
+  padding: 100px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 60px;
+  align-items: center;
+}
+
+/* Shipping Section */
+.shipping-section {
+  padding: 100px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  background: #fff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.shipping-img-wrapper {
+  position: relative;
+  padding: 20px;
+  border: 2px solid #000;
+  box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
+}
+
+.shipping-img-wrapper:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+.shipping-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    min-height: auto;
+    padding-top: 40px;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .collage-area {
+    margin-top: 40px;
+    height: 400px !important;
+  }
+
+  .services-section {
+    grid-template-columns: 1fr;
+  }
+
+  .torn-paper-blue {
+    min-height: 400px !important;
+    margin-bottom: 30px;
+  }
+
+  .shipping-section {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+  .shipping-img-wrapper {
+    margin: 0 auto 40px;
+    max-width: 400px;
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    margin-right: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .price {
+    font-size: 2.5rem;
+  }
+}
