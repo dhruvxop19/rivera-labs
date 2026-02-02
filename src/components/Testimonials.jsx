@@ -71,7 +71,7 @@ const Testimonials = () => {
     const marqueeList = [...testimonials, ...testimonials, ...testimonials];
 
     return (
-        <section className="section-padding" style={{ background: '#fff', marginTop: '100px', overflow: 'hidden' }}>
+        <section className="section-padding" style={{ marginTop: '100px', overflow: 'hidden' }}>
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const CTA = () => {
     return (
-        <section className="cta-section" style={{ textAlign: 'center', padding: '150px 0', borderTop: '1px solid #ddd' }}>
+        <section className="cta-section" style={{ textAlign: 'center', padding: '150px 0' }}>
             <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
