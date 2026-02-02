@@ -1,0 +1,42 @@
+/* Marquee Animation */
+.marquee-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-content {
+    display: flex;
+    flex-shrink: 0;
+    animation: scroll 40s linear infinite;
+    gap: 40px;
+    padding-left: 40px;
+    /* Gap correction */
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee-card {
+    width: 400px;
+    flex-shrink: 0;
+    margin: 0;
+    /* Override default margins */
+}
+
+.testimonial-text {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+    line-height: 1.6;
+}

@@ -8,7 +8,7 @@ const Footer = () => {
                 <a href="#" style={{ marginRight: '20px' }}>Instagram</a>
                 <a href="#">LinkedIn</a>
             </div>
-            <div>EST. 2024 — BEYOND DIGITAL</div>
+            <div>EST. 2026 — BEYOND DIGITAL</div>
         </footer>
     );
 };

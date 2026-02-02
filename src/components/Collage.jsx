@@ -61,6 +61,7 @@ const Collage = () => {
                     border: '1px solid black',
                     transform: 'rotate(15deg)',
                     zIndex: 0
+                    
                 }}
                 initial={{ rotate: 0, scale: 0 }}
                 animate={{ rotate: 15, scale: 1 }}
