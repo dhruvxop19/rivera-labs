@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Quote } from 'lucide-react';
 import './Testimonials.css';
 
@@ -35,11 +36,24 @@ const Testimonials = () => {
 
     return (
         <section className="section-padding" style={{ background: '#fff', marginTop: '100px', overflow: 'hidden' }}>
-            <div className="container" style={{ textAlign: 'center', marginBottom: '60px' }}>
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: false, amount: 0.2 }}
+                className="container"
+                style={{ textAlign: 'center', marginBottom: '60px' }}
+            >
                 <h2 style={{ fontSize: '3rem' }}>What our partners <br /><em>are saying</em></h2>
-            </div>
+            </motion.div>
 
-            <div className="marquee-container">
+            <motion.div
+                className="marquee-container"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.2 }}
+                viewport={{ once: false, amount: 0.2 }}
+            >
                 <div className="marquee-content">
                     {marqueeList.map((t, index) => (
                         <div key={index} className="testimonial-card marquee-card">
@@ -71,7 +85,7 @@ const Testimonials = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </motion.div>
         </section>
     );
 };
